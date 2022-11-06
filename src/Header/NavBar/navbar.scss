@@ -1,0 +1,140 @@
+.navbar {
+    background-color: grey;
+  hr{
+    border-bottom: 1.5px solid rgb(5, 255, 5);
+  }
+  .card {
+    .above {
+      background-color: rgba(20, 19, 19, 0.835);
+      ul {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 20px;
+        li {
+          color: white;
+          font-size: 14px;
+          font-weight: bold;
+        }
+      }
+    }
+    .middle {
+      background-color: rgba(20, 19, 19, 0.835);
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
+      .left {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        .header-name {
+          h1 {
+            color: rgb(0, 255, 255);
+            font-size: 32px;
+            font-weight: bold;
+            font-style: italic;
+            margin: 0;
+          }
+          span {
+            color: rgb(239, 181, 72);
+            font-size: 22px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            font-style: italic;
+            margin: 0;
+          }
+        }
+        .search {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          border: 1.5px solid lightblue;
+          border-radius: 5px;
+          padding: 4px;
+          input {
+            border: none;
+            width: 450px;
+            background-color: rgba(49, 48, 48, 0.323);
+          }
+        }
+      }
+      .right {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        .sign {
+          color: rgb(239, 181, 72);
+
+          h1 {
+            font-size: 15px;
+            font-weight: bold;
+            font-style: italic;
+            margin: 0;
+          }
+          span {
+            font-size: 12px;
+            font-weight: bold;
+            font-style: italic;
+            margin: 0;
+          }
+        }
+        .review {
+          h1 {
+            font-size: 15px;
+            font-weight: bold;
+            font-style: italic;
+            margin: 0;
+          }
+          span {
+            font-size: 12px;
+            font-weight: bold;
+            font-style: italic;
+            margin: 0;
+          }
+        }
+        .cart {
+          color: rgb(239, 181, 72);
+        }
+        .theme {
+          color: rgb(239, 181, 72);
+        }
+      }
+    }
+    .down {
+      display: flex;
+      gap: 200px;
+      margin: 0;
+      padding: 0 30px;
+      background-color: gray;
+      align-items: center;
+      .start {
+        display: flex;
+        img {
+          width: 159px;
+          height: 53px;
+        }
+      }
+      .end {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        ul {
+          display: flex;
+          gap: 80px;
+          li {
+            font-weight: bold;
+            list-style: none;
+            font-style: italic;
+            sup {
+              width: 10px;
+              height: 10px;
+              background-color: rgb(247, 86, 28);
+              font-size: 10px;
+              padding: 2px;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
