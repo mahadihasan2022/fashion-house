@@ -9,6 +9,9 @@
         display: flex;
         width: 60%;
         min-height: 500px;
+        border: 1.5px solid;
+        border-radius: 15px;
+
 
         .left{
             flex: 1;
@@ -58,8 +61,6 @@
             gap: 10px;
             padding-left: 10px;
             border-radius: 0 15px 15px 0;
-
-
             h1{
                 font-weight: bold;
                 font-style: italic;

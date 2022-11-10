@@ -9,6 +9,8 @@ background-color: rgba(38, 41, 44, 0.698);
     display: flex;
     width: 65%;
     min-height: 450px;
+    border: 1.5px solid;
+    border-radius: 15px;
     .left {
       flex: 1;
       background: linear-gradient(
