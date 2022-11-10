@@ -1,8 +1,42 @@
 import React from 'react';
+import './home.scss';
 
 const Home = () => {
     return (
-        <div>
+        <div className='home'>
+            <p>home</p>
+            <p>home</p>
+            <p>home</p>
+            <p>home</p>
+            <p>home</p>
+            <p>home</p>
+            <p>home</p>
+            <p>home</p>
+            <p>home</p>
+            <p>home</p>
+            <p>home</p>
+            <p>home</p>
+            <p>home</p>
+            <p>home</p>
+            <p>home</p>
+            <p>home</p>
+            <p>home</p>
+            <p>home</p>
+            <p>home</p>
+            <p>home</p>
+            <p>home</p>
+            <p>home</p>
+            <p>home</p>
+            <p>home</p>
+            <p>home</p>
+            <p>home</p>
+            <p>home</p>
+            <p>home</p>
+            <p>home</p>
+            <p>home</p>
+            <p>home</p>
+            <p>home</p>
+            <p>home</p>
             <p>home</p>
         </div>
     );

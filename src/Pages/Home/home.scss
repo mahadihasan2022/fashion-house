@@ -1,0 +1,11 @@
+.home{
+    background-color: rgba(38, 41, 44, 0.698);
+    position: sticky;
+    top: 70px;
+    margin: 0;
+    height: calc(100vh - 70px);
+    overflow: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+}

@@ -5,7 +5,9 @@
   }
   .card {
     .above {
-      background-color: rgba(20, 19, 19, 0.835);
+      // background-color: rgba(20, 19, 19, 0.835);
+    background-color: rgba(38, 41, 44, 0.698);
+
       ul {
         display: flex;
         justify-content: space-around;
@@ -18,7 +20,9 @@
       }
     }
     .middle {
-      background-color: rgba(20, 19, 19, 0.835);
+      // background-color: rgba(20, 19, 19, 0.835);
+    background-color: rgba(38, 41, 44, 0.698);
+
       display: flex;
       justify-content: space-between;
       padding: 0 20px;
@@ -54,6 +58,7 @@
             border: none;
             width: 450px;
             background-color: rgba(49, 48, 48, 0.323);
+            padding-left: 5px;
           }
         }
       }

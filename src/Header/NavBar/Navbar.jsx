@@ -3,6 +3,7 @@ import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import WbSunnyOutLinedIcon from "@mui/icons-material/WbSunnyOutlined";
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import nav from "../../images/nav.svg";
 import "./navbar.scss";
 import { Link } from "react-router-dom";
@@ -63,7 +64,7 @@ const Navbar = () => {
             </div>
             <div className="end">
                 <ul>
-                    <li>Home</li>
+                    <Link to='/' style={{textDecoration:"none", color:"black"}} ><HomeOutlinedIcon style={{fontSize:"20px"}}/></Link>
                     <li>Promotion<sup>Hot</sup></li>
                     <li>New Product</li>
                     <li>Blogs</li>
@@ -72,7 +73,6 @@ const Navbar = () => {
             </div>
         </div>
       </div>
-      <hr />
     </div>
   );
 };

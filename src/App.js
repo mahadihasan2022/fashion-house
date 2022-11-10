@@ -1,9 +1,10 @@
 import { Children, useState } from "react";
-import {  createBrowserRouter, RouterProvider, Route, Outlet, Navigate, } from "react-router-dom";
+import {  createBrowserRouter, RouterProvider, Route, Outlet, Navigate, Routes, } from "react-router-dom";
 import LeftBar from "./Header/LeftBar/LeftBar";
 import Navbar from "./Header/NavBar/Navbar";
 import RightBar from "./Header/RightBar/RightBar";
-import Home from "./Pages/Home/Home"
+import Home from "./Pages/Home/Home";
+import Login from "./Pages/Login/Login";
 
 function App() {
   const [user, setUser] = useState();
@@ -36,6 +37,7 @@ function App() {
   }
 
 
+
   const router = createBrowserRouter([
     {
       path: "/",
@@ -43,13 +45,17 @@ function App() {
            <ProtectedRoute>
               <Layout/>
            </ProtectedRoute>,
-      Children: [
+      children: [
         {
-          path: "/",
-          element: <Home/>
-        }
+          path: '/',
+          element: <Home/>,
+        },
       ]
     },
+    {
+      path:"/login",
+      element:<Login/>,
+    }
   ]);
 
 

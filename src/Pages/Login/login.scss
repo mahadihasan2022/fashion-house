@@ -1,0 +1,95 @@
+.login {
+  height: 100vh;
+  background-color: rgb(65, 234, 234);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .card {
+    display: flex;
+    width: 65%;
+    min-height: 450px;
+    .left {
+      flex: 1;
+      background: linear-gradient(
+          rgba(0, 128, 0, 0.466),
+          rgba(0, 0, 255, 0.299)
+        ),
+        url("https://static.vecteezy.com/system/resources/previews/007/164/537/original/fingerprint-identity-sensor-data-protection-system-podium-hologram-blue-light-and-concept-free-vector.jpg")
+          left;
+      background-size: cover;
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding-left: 10px;
+      border-radius: 15px 0 0 15px;
+
+      h1 {
+        font-weight: bold;
+        font-style: italic;
+        font-size: 60px;
+        color: white;
+        text-align: center;
+        line-height: 60px;
+      }
+      p {
+        font-weight: 400;
+        font-style: italic;
+        color: mintcream;
+        text-align: start;
+      }
+      span {
+        color: rgb(6, 244, 244);
+        text-align: start;
+        font-style: italic;
+        font-weight: bold;
+        padding-bottom: 15px;
+      }
+      button {
+        font-weight: bold;
+        width: 40%;
+        color: black;
+        font-style: italic;
+        background-color: rgb(246, 249, 249);
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+    }
+    .right {
+      flex: 1;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      background-color: white;
+      border-radius: 0 15px 15px 0;
+
+      h1 {
+        color: #555;
+        font-size: 40px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        input {
+          border: none;
+          border-bottom: 1.5px solid lightslategray;
+          height: 40px;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+        button {
+          padding: 10px;
+          background-color: rgba(5, 132, 83, 0.868);
+          border: none;
+          width: 40%;
+          font-weight: 900;
+          font-style: italic;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
