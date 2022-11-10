@@ -5,6 +5,7 @@ import Navbar from "./Header/NavBar/Navbar";
 import RightBar from "./Header/RightBar/RightBar";
 import Home from "./Pages/Home/Home";
 import Login from "./Pages/Login/Login";
+import SignUp from "./Pages/SignUp/SignUp";
 
 function App() {
   const [user, setUser] = useState();
@@ -55,7 +56,11 @@ function App() {
     {
       path:"/login",
       element:<Login/>,
-    }
+    },
+    {
+      path:"/signUp",
+      element:<SignUp/>,
+    },
   ]);
 
 
