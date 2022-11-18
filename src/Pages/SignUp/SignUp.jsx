@@ -1,33 +1,89 @@
+import { TextField } from "@mui/material";
 import React, { useState } from "react";
+import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../../Header/NavBar/Navbar";
-import './signUp.scss';
-
+import NavBar from "../../Header/NavBar/Navbar";
+import useAuth from "../../hooks/useAuth";
+import "./signUp.scss";
 const SignUp = () => {
+  const [isShowPassword, setIsShowPassword] = useState(false);
+  const { createUserWithEmailAndPasswordHandler } = useAuth();
+  const { register, handleSubmit, reset, formState: { errors },
+  } = useForm();
+  const onSubmit = (data) => {
+    const { name, email, password, confirmPassword } = data;
+    if (password === confirmPassword) {
+      createUserWithEmailAndPasswordHandler(name, email, password);
+      reset();
+    }
+  };
+
   const navigate = useNavigate();
 
   const handleVisitLoginPage = () => {
     navigate("/login");
   };
+ 
 
   return (
     <div>
-        <Navbar/>
+      <NavBar />
       <div className="signUp">
         <div className="card">
           <div className="left">
             <h1> Register Now...</h1>
-            <form>
-              <input type="text" placeholder="name" />
-              <input type="email" name="" id="" placeholder="email" />
-              <input type="password" name="" id="" placeholder="password" />
-              <input
-                type="password"
-                name=""
-                id=""
-                placeholder="conform password"
+            <form onSubmit={handleSubmit(onSubmit)}>
+              <TextField
+                {...register("name", { required: true })}
+                id="Name"
+                label="Name"
+                variant="standard"
+                className="form-control mt-3"
               />
-              <button>Sign Up</button>
+              <TextField
+                type="email"
+                {...register("email", { required: true })}
+                id="Email"
+                label="Email"
+                variant="standard"
+                className="form-control mt-3"
+              />
+              <TextField
+                type={isShowPassword ? "text" : "password"}
+                {...register("password", { required: true, minLength: 6 })}
+                id="Password"
+                label="Password"
+                variant="standard"
+                className="form-control mt-3"
+              />
+              {errors.password && (
+                <p className="text-start text-danger">
+                  Give Password minimum 6 characters
+                </p>
+              )}
+              <TextField
+                type={isShowPassword ? "text" : "password"}
+                {...register("confirmPassword", { required: true })}
+                id="Confirm-Password"
+                label="Confirm Password"
+                variant="standard"
+                className="form-control mt-3"
+              />
+              <div className="text-start">
+                <input
+                  type="checkbox"
+                  name=""
+                  onClick={() => setIsShowPassword(!isShowPassword)}
+                />{" "}
+                show password
+              </div>
+              <br />
+            <div className="button">
+            <input
+                type="submit"
+                value="Sign in"
+              />
+            </div>
             </form>
           </div>
           <div className="right">

@@ -2,11 +2,12 @@ import React from "react";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
-import WbSunnyOutLinedIcon from "@mui/icons-material/WbSunnyOutlined";
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import nav from "../../images/nav.svg";
 import "./navbar.scss";
 import { Link } from "react-router-dom";
+import useAuth from "../../hooks/useAuth";
+import { List } from "@mui/material";
 
 
 
@@ -14,7 +15,10 @@ import { Link } from "react-router-dom";
 
 
 
-const Navbar = () => {
+const Navbar = (props) => {
+
+
+
   return (
     <div className="navbar">
       <div className="card">
@@ -71,6 +75,7 @@ const Navbar = () => {
                     <li>Contact Us</li>
                 </ul>
             </div>
+           
         </div>
       </div>
     </div>

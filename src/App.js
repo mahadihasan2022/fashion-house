@@ -1,14 +1,19 @@
-import { Children, useState } from "react";
-import {  createBrowserRouter, RouterProvider, Route, Outlet, Navigate, Routes, } from "react-router-dom";
+import { useState } from "react";
+import {  createBrowserRouter, RouterProvider, Outlet, Navigate, } from "react-router-dom";
+import UserProfile from "./component/UserProfile";
+import AuthProvider from "./context/AuthProvider";
 import LeftBar from "./Header/LeftBar/LeftBar";
 import Navbar from "./Header/NavBar/Navbar";
 import RightBar from "./Header/RightBar/RightBar";
+import useAuth from "./hooks/useAuth";
 import Home from "./Pages/Home/Home";
 import Login from "./Pages/Login/Login";
 import SignUp from "./Pages/SignUp/SignUp";
 
 function App() {
-  const [user, setUser] = useState();
+const {user} = useAuth();
+console.log(user);
+  
 
 
   const Layout = () =>{
@@ -30,7 +35,7 @@ function App() {
   const ProtectedRoute = ( {children} ) =>{
     
     if (!user){
-      // return <Navigate to='/login'/>
+      return <Navigate to='/login'/>
     }
 
     return children
@@ -61,11 +66,15 @@ function App() {
       path:"/signUp",
       element:<SignUp/>,
     },
+    {
+      path:"/userProfile",
+      element:<UserProfile/>,
+    },
   ]);
 
 
   return (
-    <div className="App">
+    <div>
       <RouterProvider router={router} />
     </div>
   );

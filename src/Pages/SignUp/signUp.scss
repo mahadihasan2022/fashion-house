@@ -1,5 +1,5 @@
 .signUp{
-    height: 100vh;
+    height: 120vh;
     // background-color: rgb(65, 234, 234);
     background-color: rgba(38, 41, 44, 0.698);
     display: flex;
@@ -7,8 +7,8 @@
     justify-content: center;
     .card{
         display: flex;
-        width: 60%;
-        min-height: 500px;
+        width: 70%;
+        min-height: 600px;
         border: 1.5px solid;
         border-radius: 15px;
 
@@ -17,7 +17,6 @@
             flex: 1;
             display: flex;
             flex-direction: column;
-            gap: 20px;
             background-color: white;
             border-radius: 15px 0 0 15px;
             h1{
@@ -32,19 +31,30 @@
                 gap: 20px;
                 margin: 20px;
                
-                input{
+                ::-webkit-textfield-decoration-container{
                     border: none;
-                    border-bottom: 1.5px solid lightslategray;
+                    border-bottom: 1.5px solid rgb(14, 10, 255);
                     padding: 10px 10px;
                 }
-                button{
-                    padding: 10px;
+                .text-start{
+                    display: flex;
+                    justify-content: left;
+                    input{
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+                .button{
+                    margin: 0;
+                      input{
+                        padding: 10px;
                     background-color: rgba(5, 132, 83, 0.868);
                     border: none;
                     width: 40%;
                     font-weight: 900;
                     font-style: italic;
-                    cursor: pointer;   
+                    cursor: pointer; 
+                      }
                 }
 
             }
