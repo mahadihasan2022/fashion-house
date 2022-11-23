@@ -7,9 +7,9 @@ background-color: rgba(38, 41, 44, 0.698);
   justify-content: center;
   .card {
     display: flex;
-    width: 65%;
+    width: 60%;
     min-height: 450px;
-    border: 1.5px solid;
+    border: .5px solid;
     border-radius: 15px;
     .left {
       flex: 1;
@@ -48,6 +48,10 @@ background-color: rgba(38, 41, 44, 0.698);
         font-weight: bold;
         padding-bottom: 15px;
       }
+     .btn{
+      display: flex;
+      justify-content: end;
+      padding-right: 20px;
       button {
         font-weight: bold;
         width: 40%;
@@ -58,31 +62,32 @@ background-color: rgba(38, 41, 44, 0.698);
         padding: 10px;
         cursor: pointer;
       }
+     }
     }
     .right {
       flex: 1;
-      padding: 40px;
       display: flex;
       flex-direction: column;
-      gap: 50px;
+      gap: 10px;
       background-color: white;
       border-radius: 0 15px 15px 0;
 
       h1 {
         color: #555;
         font-size: 40px;
+      padding-left: 10px;
+
       }
       form {
         display: flex;
         flex-direction: column;
         gap: 30px;
-        input {
+        padding-left: 10px;
+        ::-webkit-textfield-decoration-container{
           border: none;
-          border-bottom: 1.5px solid lightslategray;
-          height: 40px;
-          padding-left: 10px;
-          padding-right: 10px;
-        }
+          border-bottom: 1.5px solid rgb(14, 10, 255);
+          padding: 10px 10px;
+      }
         button {
           padding: 10px;
           background-color: rgba(5, 132, 83, 0.868);
@@ -93,6 +98,23 @@ background-color: rgba(38, 41, 44, 0.698);
           cursor: pointer;
         }
       }
+      h2{
+        color: rgba(222, 184, 135, 0.96);
+      }
+    .button{
+      button {
+        cursor: pointer;
+        border: 0.5px solid rgba(2, 42, 42, 0.9);
+        background-color: rgba(2, 42, 42, 0.9);
+        border-radius: 0 0 15px 0;
+        color: white;
+        font-weight: 500;
+        width: 100%;
+
+        span {
+        }
+      }
+    }
     }
   }
 }

@@ -1,81 +1,41 @@
-import { useState } from "react";
-import {  createBrowserRouter, RouterProvider, Outlet, Navigate, } from "react-router-dom";
-import UserProfile from "./component/UserProfile";
-import AuthProvider from "./context/AuthProvider";
+import {
+  Outlet,
+  Routes,
+  Route,
+  RouterProvider,
+  createBrowserRouter,
+  Navigate,
+} from "react-router-dom";
 import LeftBar from "./Header/LeftBar/LeftBar";
 import Navbar from "./Header/NavBar/Navbar";
 import RightBar from "./Header/RightBar/RightBar";
-import useAuth from "./hooks/useAuth";
 import Home from "./Pages/Home/Home";
 import Login from "./Pages/Login/Login";
+import Promotion from "./Pages/Promotion/Promotion";
 import SignUp from "./Pages/SignUp/SignUp";
+import UserPrivateRoute from "./PrivateRoute/UserPrivateRoute";
+import LoginPrivateRoute from "./PrivateRoute/LoginPrivateRoute";
+import Profile from "./user/Profile/Profile";
+import Layout from './Layout/Layout';
 
 function App() {
-const {user} = useAuth();
-console.log(user);
-  
-
-
-  const Layout = () =>{
-    // className={`theme-${darkMode ? "dark " : "light"}`}
-    return(
-      <div>
-        <Navbar/>
-        <div style={{display: "flex"}}>
-          <LeftBar/>
-         <div style={{flex: 6}}>
-         <Outlet/>
-         </div>
-          <RightBar/>
-        </div>
-      </div>
-    )
-  }
-
-  const ProtectedRoute = ( {children} ) =>{
-    
-    if (!user){
-      return <Navigate to='/login'/>
-    }
-
-    return children
-
-  }
-
-
-
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: 
-           <ProtectedRoute>
-              <Layout/>
-           </ProtectedRoute>,
-      children: [
-        {
-          path: '/',
-          element: <Home/>,
-        },
-      ]
-    },
-    {
-      path:"/login",
-      element:<Login/>,
-    },
-    {
-      path:"/signUp",
-      element:<SignUp/>,
-    },
-    {
-      path:"/userProfile",
-      element:<UserProfile/>,
-    },
-  ]);
-
 
   return (
     <div>
-      <RouterProvider router={router} />
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path="/" element={<Home />} />
+        </Route>
+        <Route element={<UserPrivateRoute />}>
+          <Route path="/promotion" element={<Promotion />} />
+          <Route path="/profile" element={<Profile />} />
+        </Route>
+
+        <Route element={<LoginPrivateRoute />}>
+          <Route path="/login" element={<Login />} />
+          <Route path="/signUp" element={<SignUp />} />
+        </Route>
+      </Routes>
     </div>
   );
 }

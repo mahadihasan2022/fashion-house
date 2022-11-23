@@ -1,12 +1,11 @@
 .navbar {
-    background-color: grey;
-  hr{
+  background-color: grey;
+  hr {
     border-bottom: 1.5px solid rgb(5, 255, 5);
   }
   .card {
     .above {
-      // background-color: rgba(20, 19, 19, 0.835);
-    background-color: rgba(38, 41, 44, 0.698);
+      background-color: rgba(38, 41, 44, 0.698);
 
       ul {
         display: flex;
@@ -20,8 +19,7 @@
       }
     }
     .middle {
-      // background-color: rgba(20, 19, 19, 0.835);
-    background-color: rgba(38, 41, 44, 0.698);
+      background-color: rgba(38, 41, 44, 0.698);
 
       display: flex;
       justify-content: space-between;
@@ -106,11 +104,11 @@
     }
     .down {
       display: flex;
-      gap: 150px;
+      gap: 120px;
       margin: 0;
-      padding: 0 30px;
       background-color: gray;
       align-items: center;
+      padding-left: 20px;
       .start {
         display: flex;
         img {
@@ -122,11 +120,17 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
+        height: 50px;
+        padding: 0 20px;
+        width: 50%;
+
         ul {
           display: flex;
           align-items: center;
+          height: 50px;
+
           gap: 40px;
-          li {
+          :link {
             font-weight: bold;
             list-style: none;
             font-style: italic;
@@ -141,6 +145,17 @@
             }
           }
         }
+        :link:hover {
+          background-color: rgb(96, 96, 220);
+          height: 100%;
+          display: flex;
+          align-items: center;
+          position: static;
+        }
+      }
+      .end-right {
+        display: flex;
+        gap: 50px;
       }
     }
   }

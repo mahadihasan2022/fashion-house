@@ -1,4 +1,5 @@
 import { TextField } from "@mui/material";
+import { SocialIcon } from "react-social-icons";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
@@ -6,9 +7,15 @@ import NavBar from "../../Header/NavBar/Navbar";
 import useAuth from "../../hooks/useAuth";
 import "./signUp.scss";
 const SignUp = () => {
+  const navigate = useNavigate();
   const [isShowPassword, setIsShowPassword] = useState(false);
-  const { createUserWithEmailAndPasswordHandler } = useAuth();
-  const { register, handleSubmit, reset, formState: { errors },
+  const { googleSignInHandler, createUserWithEmailAndPasswordHandler } =
+    useAuth();
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
     const { name, email, password, confirmPassword } = data;
@@ -18,12 +25,9 @@ const SignUp = () => {
     }
   };
 
-  const navigate = useNavigate();
-
   const handleVisitLoginPage = () => {
     navigate("/login");
   };
- 
 
   return (
     <div>
@@ -77,14 +81,24 @@ const SignUp = () => {
                 />{" "}
                 show password
               </div>
-              <br />
-            <div className="button">
-            <input
-                type="submit"
-                value="Sign in"
-              />
-            </div>
+              <div className="button">
+                <input type="submit" value="Sign in" />
+              </div>
             </form>
+
+            <h2 style={{ textAlign: "center", margin: "0" }}>
+              ------------Or------------
+            </h2>
+            <button onClick={googleSignInHandler} className="btn btn-primary">
+              <span className="text-success bg-light rounded-circle p-2">
+                <SocialIcon
+                  url="https://google.com/jaketrent"
+                  fgColor={(2, 42, 42, 0.9)}
+                  bgColor="cornsilk"
+                />
+              </span>{" "}
+              Log in with Google
+            </button>
           </div>
           <div className="right">
             <h1>Welcome To Our Website</h1>
@@ -95,7 +109,9 @@ const SignUp = () => {
               consequuntur delectus aut quae rerum?
             </p>
             <span>If you have already an account!!</span>
-            <button onClick={handleVisitLoginPage}>Login</button>
+            <div className="btn">
+              <button onClick={handleVisitLoginPage}>Login</button>
+            </div>
           </div>
         </div>
       </div>
