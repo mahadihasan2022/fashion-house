@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import { useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../../Header/NavBar/Navbar";
 import useAuth from "../../hooks/useAuth";
+import { FcGoogle } from 'react-icons/fc';
 import "./login.scss";
 
 const Login = () => {
@@ -74,12 +75,8 @@ const Login = () => {
             <div className="button">
             <button onClick={googleSignInHandler} className="btn btn-primary">
               <span className="text-success bg-light rounded-circle p-2">
-                <SocialIcon
-                  url="https://google.com/jaketrent"
-                  fgColor={(2, 42, 42, 0.9)}
-                  bgColor="cornsilk"
-                />
-              </span>{" "}
+                <FcGoogle style={{fontSize:'40px'}}/>
+              </span>
               Log in with Google
             </button>
             </div>

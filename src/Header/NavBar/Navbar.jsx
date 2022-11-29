@@ -48,7 +48,7 @@ const Navbar = (props) => {
           <div className="right">
             <div className="sign">
               <Link
-                to="/login"
+                to="/signUp"
                 style={{ textDecoration: "none", color: "orange" }}
               >
                 <h1>Sign In</h1>

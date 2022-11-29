@@ -28,7 +28,7 @@ const RightBar = () => {
           <button>Jacket</button>
           <button>Coats</button>
           <button>Half-Pant</button>
-          <button>Ties</button>
+          <button>Tights</button>
           <button>Kurta</button>
           <button>Frogs</button>
           <button>Kameez</button>

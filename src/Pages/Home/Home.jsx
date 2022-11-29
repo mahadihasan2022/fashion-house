@@ -1,43 +1,11 @@
 import React from 'react';
+import Pagination from '../../Components/Pagination/Pagination';
 import './home.scss';
 
 const Home = () => {
     return (
         <div className='home'>
-            <p>home</p>
-            <p>home</p>
-            <p>home</p>
-            <p>home</p>
-            <p>home</p>
-            <p>home</p>
-            <p>home</p>
-            <p>home</p>
-            <p>home</p>
-            <p>home</p>
-            <p>home</p>
-            <p>home</p>
-            <p>home</p>
-            <p>home</p>
-            <p>home</p>
-            <p>home</p>
-            <p>home</p>
-            <p>home</p>
-            <p>home</p>
-            <p>home</p>
-            <p>home</p>
-            <p>home</p>
-            <p>home</p>
-            <p>home</p>
-            <p>home</p>
-            <p>home</p>
-            <p>home</p>
-            <p>home</p>
-            <p>home</p>
-            <p>home</p>
-            <p>home</p>
-            <p>home</p>
-            <p>home</p>
-            <p>home</p>
+       <Pagination/>
         </div>
     );
 };

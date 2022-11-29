@@ -57,6 +57,7 @@ const LeftBar = () => {
           <button>White</button>
           <button>Pink</button>
           <button>Red</button>
+          <button>Multi</button>
         </div>
       </div>
       <hr />
