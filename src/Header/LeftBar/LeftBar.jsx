@@ -38,26 +38,55 @@ const LeftBar = () => {
         )}
       </div>
       <hr />
+      <div className="center">
+        <h1>Brand</h1>
+        <div className="container">
+          <input type="text" id="name" placeholder="Brand" />
+          <select name="filter" id="filter">
+            <option value="Easy">Easy</option>
+            <option value="RichMan">Rich Man</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Zara">Zara</option>
+            <option value="Raymond">Raymond</option>
+            <option value="Umbrella">Umbrella</option>
+            <option value="Arong">Arong</option>
+            <option value="Darjibari">Darjibari</option>
+            <option value="Brady">Brady</option>
+            <option value="Armani">Armani</option>
+            <option value="Supreme">Supreme</option>
+          </select>
+          <button>Select</button>
+        </div>
+      </div>
+      <hr />
       <div className="middle">
         <h1>Size</h1>
-        <div className="btn-info">
-          <button>S</button>
-          <button>M</button>
-          <button>L</button>
-          <button>XL</button>
-          <button>XXL</button>
+        <div className="container">
+          <input type="text" id="name" placeholder="Size" />
+          <select name="filter" id="filter">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+          <button>Select</button>
         </div>
       </div>
       <hr />
       <div className="finish">
         <h1>Color</h1>
-        <div className="btn-info">
-          <button>Black</button>
-          <button>Blue</button>
-          <button>White</button>
-          <button>Pink</button>
-          <button>Red</button>
-          <button>Multi</button>
+        <div className="container">
+          <input type="text" id="name" placeholder="Color" />
+          <select name="filter" id="filter">
+            <option value="Red">Red</option>
+            <option value="Black">Black</option>
+            <option value="Blue">Blue</option>
+            <option value="Pink">Pink</option>
+            <option value="White">White</option>
+            <option value="Multi">Multi</option>
+          </select>
+          <button>Select</button>
         </div>
       </div>
       <hr />

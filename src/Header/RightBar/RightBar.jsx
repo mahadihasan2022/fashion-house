@@ -35,22 +35,6 @@ const RightBar = () => {
         </div>
         </div>
         <hr />
-        <div className="end">
-        <h1>Brands</h1>
-        <div className="button-container">
-          <button>Easy</button>
-          <button>Yellow</button>
-          <button>Rich Man</button>
-          <button>Raymond</button>
-          <button>Darjibari</button>
-          <button>Umbrella</button>
-          <button>Arong</button>
-          <button>Brady</button>
-          <button>Zara</button>
-          <button>Supreme</button>
-          <button>Armani</button>
-        </div>
-        </div>
     </div>
   );
 };
