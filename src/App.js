@@ -12,6 +12,7 @@ import Blogs from "./Pages/Blogs/Blogs";
 import Contact from "./Pages/Contact/Contact";
 import ManCollections from "./Pages/ManCollections/ManCollections";
 import WomanCollections from "./Pages/WomanCollections/WomanCollections";
+import KidCollections from "./Pages/KidCollections/KidCollections";
 
 function App() {
 
@@ -23,11 +24,12 @@ function App() {
         </Route>
         <Route path="/" element={<Layout />}>
         <Route path="/manCollections" element={<ManCollections/>} />
-
         </Route>
         <Route path="/" element={<Layout />}>
         <Route path="/womanCollections" element={<WomanCollections/>} />
-
+        </Route>
+        <Route path="/" element={<Layout />}>
+        <Route path="/kidsCollections" element={<KidCollections/>} />
         </Route>
         <Route element={<UserPrivateRoute />}>
         <Route path="/" element={<Layout />}>
