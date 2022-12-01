@@ -10,6 +10,8 @@ import Layout from './Layout/Layout';
 import NewProducts from "./Pages/NewProducts/NewProducts";
 import Blogs from "./Pages/Blogs/Blogs";
 import Contact from "./Pages/Contact/Contact";
+import ManCollections from "./Pages/ManCollections/ManCollections";
+import WomanCollections from "./Pages/WomanCollections/WomanCollections";
 
 function App() {
 
@@ -18,6 +20,14 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<Home />} />
+        </Route>
+        <Route path="/" element={<Layout />}>
+        <Route path="/manCollections" element={<ManCollections/>} />
+
+        </Route>
+        <Route path="/" element={<Layout />}>
+        <Route path="/womanCollections" element={<WomanCollections/>} />
+
         </Route>
         <Route element={<UserPrivateRoute />}>
         <Route path="/" element={<Layout />}>

@@ -1,18 +1,21 @@
 .cards {
   position: relative;
   width: 230px;
-  height: 355px;
+  height: 360px;
   border: 0.5px solid;
-  // margin-left: 7px;
   border-radius: 10px;
   background-color: rgb(83, 120, 83);
   -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.38);
   -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.38);
   box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.38);
   img {
-    width: 230px;
-    height: 200px;
+    margin: 10px;
+    border: 1.5px solid aqua;
     border-radius: 10px 10px 0 0;
+    width: 210px;
+    height: 190px;
+    border-radius: 10px;
+    background-color: rgba(0, 255, 255, 0.808);
   }
   .card {
     bottom: 0;

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
 import "./leftbar.scss";
+import { Link } from "react-router-dom";
 
 const LeftBar = () => {
   const [hover, setHover] = useState(false);
@@ -29,11 +30,77 @@ const LeftBar = () => {
 
         {hover && (
           <ul>
-            <li>Men's Collections</li>
-            <li>Women's Collections</li>
-            <li>Kid's Collections</li>
-            <li>Summer Collections</li>
-            <li>Winter Collections</li>
+            <Link
+              to="/manCollections"
+              style={{
+                textDecoration: "none",
+                color: "black",
+                textAlign: "start",
+                fontStyle: "italic",
+                fontWeight: "bold",
+                padding: "15px",
+                display:'block',
+              }}
+            >
+              Men's Collections
+            </Link>
+            <Link
+              to="/womanCollections"
+              style={{
+                textDecoration: "none",
+                color: "black",
+                textAlign: "start",
+                fontStyle: "italic",
+                fontWeight: "bold",
+                padding: "15px",
+                display:'block',
+              }}
+            >
+              Women's Collections
+            </Link>
+            <Link
+              to="/kidsCollections"
+              style={{
+                textDecoration: "none",
+                color: "black",
+                textAlign: "start",
+                fontStyle: "italic",
+                fontWeight: "bold",
+                padding: "15px",
+                display:'block',
+              }}
+            >
+              Kid's Collections
+            </Link>
+            <Link
+              to="/winterCollections"
+              style={{
+                textDecoration: "none",
+                color: "black",
+                textAlign: "start",
+                fontStyle: "italic",
+                fontWeight: "bold",
+                padding: "15px",
+                display:'block',
+              }}
+            >
+              Winter's Collections
+            </Link>
+            <Link
+              to="/summerCollections"
+              style={{
+                textDecoration: "none",
+                color: "black",
+                textAlign: "start",
+                fontStyle: "italic",
+                fontWeight: "bold",
+                padding: "15px",
+                display:'block',
+              }}
+            >
+              Summer's Collections
+            </Link>
+           
           </ul>
         )}
       </div>
@@ -91,7 +158,6 @@ const LeftBar = () => {
       </div>
       <hr />
     </div>
-
   );
 };
 
