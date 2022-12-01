@@ -13,6 +13,7 @@ import Contact from "./Pages/Contact/Contact";
 import ManCollections from "./Pages/ManCollections/ManCollections";
 import WomanCollections from "./Pages/WomanCollections/WomanCollections";
 import KidCollections from "./Pages/KidCollections/KidCollections";
+import WinterCollection from "./Pages/WinterCollections/WinterCollection";
 
 function App() {
 
@@ -30,6 +31,9 @@ function App() {
         </Route>
         <Route path="/" element={<Layout />}>
         <Route path="/kidsCollections" element={<KidCollections/>} />
+        </Route>
+        <Route path="/" element={<Layout />}>
+        <Route path="/winterCollections" element={<WinterCollection/>} />
         </Route>
         <Route element={<UserPrivateRoute />}>
         <Route path="/" element={<Layout />}>
