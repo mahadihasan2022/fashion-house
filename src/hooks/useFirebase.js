@@ -29,7 +29,6 @@ const useFirebase = () => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
         setUser(user);
-        // console.log(user);
       } else {
         setUser({});
       }
@@ -54,20 +53,7 @@ const useFirebase = () => {
         alert("sign in unsuccessful. Please try again");
       });
   };
-  // const googleSignInHandler = () => {
-  //   const provider = new GoogleAuthProvider();
-  //   signInWithPopup(auth, provider)
-  //     .then((result) => {
-  //       setGetUser({
-  //         name: result?.user?.displayName,
-  //         email: result?.user?.email,
-  //         img: result?.user?.photoURL,
-  //       });
-  //     })
-  //     .catch((error) => {
-  //       alert("Google sign in unsuccessful. Please try again");
-  //     });
-  // };
+
   const googleSignInHandler = () => {
     const provider = new GoogleAuthProvider();
     signInWithPopup(auth, provider)

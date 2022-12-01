@@ -29,9 +29,9 @@ const SummerCollections = () => {
 
 
     return (
-        <>
+        
         <div className="Pagination-container">
-          <h1>Our Woman Collections</h1>
+          <h1>For Summer Collections</h1>
           <div className="product-container">
             <div className="container">
               {currentItems.map((product) => (
@@ -40,7 +40,7 @@ const SummerCollections = () => {
              
             </div>
           </div>
-        </div>
+       
         <ReactPaginate
           breakLabel="..."
           nextLabel="next >"
@@ -55,7 +55,7 @@ const SummerCollections = () => {
           nextLinkClassName="page-num"
           activeLinkClassName="active"
         />
-      </>
+      </div>
     );
   };
 

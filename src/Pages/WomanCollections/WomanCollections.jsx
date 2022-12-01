@@ -26,9 +26,9 @@ const WomanCollections = () => {
       setItemOffset(newOffset);
     };
     return (
-        <>
+       
         <div className="Pagination-container">
-          <h1>Our Woman Collections</h1>
+          <h1>For Woman's Collections</h1>
           <div className="product-container">
             <div className="container">
               {currentItems.map((product) => (
@@ -37,7 +37,7 @@ const WomanCollections = () => {
              
             </div>
           </div>
-        </div>
+       
         <ReactPaginate
           breakLabel="..."
           nextLabel="next >"
@@ -52,7 +52,7 @@ const WomanCollections = () => {
           nextLinkClassName="page-num"
           activeLinkClassName="active"
         />
-      </>
+       </div>
     );
   };
 

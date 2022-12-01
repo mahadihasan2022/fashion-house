@@ -1,11 +1,11 @@
 import React from 'react';
-import Pagination from '../../Components/Pagination/Pagination';
 import './home.scss';
+import Pagination from '../../Components/Pagination/Pagination';
 
 const Home = () => {
     return (
         <div className='home'>
-       <Pagination/>
+      <Pagination/>
         </div>
     );
 };

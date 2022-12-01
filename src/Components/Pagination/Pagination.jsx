@@ -8,7 +8,7 @@ const Pagination = () => {
   const [currentItems, setCurrentItems] = useState([]);
   const [pageCount, setPageCount] = useState(0);
   const [itemOffset, setItemOffset] = useState(0);
-  const itemsPerPage = 9;
+  const itemsPerPage = 12;
 
   useEffect(() => {
     fetch(`http://localhost:5000/products`)
@@ -27,7 +27,7 @@ const Pagination = () => {
   };
 
   return (
-    <>
+ 
       <div className="Pagination-container">
         <h1>Our Products</h1>
         <div className="product-container">
@@ -38,7 +38,7 @@ const Pagination = () => {
            
           </div>
         </div>
-      </div>
+      
       <ReactPaginate
         breakLabel="..."
         nextLabel="next >"
@@ -53,7 +53,7 @@ const Pagination = () => {
         nextLinkClassName="page-num"
         activeLinkClassName="active"
       />
-    </>
+   </div>
   );
 };
 
