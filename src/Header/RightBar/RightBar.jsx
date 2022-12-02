@@ -8,6 +8,9 @@ const RightBar = () => {
   const handleOnSaree = () =>{
     navigate('./saree');
   }
+  const handleOnShirt = () =>{
+    navigate('./shirt');
+  }
 
 
 
@@ -30,7 +33,7 @@ const RightBar = () => {
         <h1>Variants</h1>
         <div className="button-container">
           <button onClick={handleOnSaree}>Saree</button>
-          <button>Shirt</button>
+          <button onClick={handleOnShirt}>Shirt</button>
           <button>T-Shirt</button>
           <button>Pant</button>
           <button>Panjabi</button>

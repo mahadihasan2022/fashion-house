@@ -16,6 +16,7 @@ import KidCollections from "./Pages/KidCollections/KidCollections";
 import WinterCollection from "./Pages/WinterCollections/WinterCollection";
 import SummerCollections from "./Pages/SummerCollection/SummerCollections";
 import Saree from "./Others/Saree/Saree";
+import Shirt from "./Others/Shirt/Shirt";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/saree" element={<Saree/>} />
+          <Route path="/shirt" element={<Shirt/>} />
           <Route path="/manCollections" element={<ManCollections />} />
           <Route path="/womanCollections" element={<WomanCollections />} />
           <Route path="/kidsCollections" element={<KidCollections />} />
