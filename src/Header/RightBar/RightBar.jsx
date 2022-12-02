@@ -1,7 +1,17 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./rightbar.scss";
 
 const RightBar = () => {
+  const navigate = useNavigate();
+
+  const handleOnSaree = () =>{
+    navigate('./saree');
+  }
+
+
+
+
   return (
     <div className="rightbar">
       <div className="uper">
@@ -19,7 +29,7 @@ const RightBar = () => {
       <div className="middle">
         <h1>Variants</h1>
         <div className="button-container">
-          <button>Saree</button>
+          <button onClick={handleOnSaree}>Saree</button>
           <button>Shirt</button>
           <button>T-Shirt</button>
           <button>Pant</button>
