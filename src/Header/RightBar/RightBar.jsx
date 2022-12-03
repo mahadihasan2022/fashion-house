@@ -41,6 +41,9 @@ const RightBar = () => {
   const handleOnFrogs = () =>{
     navigate('./frogs');
   }
+  const handleOnKameez = () =>{
+    navigate('./kameez');
+  }
 
 
 
@@ -74,7 +77,7 @@ const RightBar = () => {
           <button onClick={handleOnTights}>Tights</button>
           <button onClick={handleOnKurta}>Kurta</button>
           <button onClick={handleOnFrogs}>Frogs</button>
-          <button>Kameez</button>
+          <button onClick={handleOnKameez}>Kameez</button>
         </div>
         </div>
         <hr />

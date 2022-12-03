@@ -10,11 +10,6 @@ import Layout from "./Layout/Layout";
 import NewProducts from "./Pages/NewProducts/NewProducts";
 import Blogs from "./Pages/Blogs/Blogs";
 import Contact from "./Pages/Contact/Contact";
-import ManCollections from "./Pages/ManCollections/ManCollections";
-import WomanCollections from "./Pages/WomanCollections/WomanCollections";
-import KidCollections from "./Pages/KidCollections/KidCollections";
-import WinterCollection from "./Pages/WinterCollections/WinterCollection";
-import SummerCollections from "./Pages/SummerCollection/SummerCollections";
 import Shirt from "./Others/Shirt/Shirt";
 import Pant from "./Others/Pant/Pant";
 import Saree from "./Others/Saree/Saree";
@@ -27,6 +22,12 @@ import HalfPant from "./Others/HalfPant/HalfPant";
 import Tights from "./Others/Tights/Tights";
 import Kurta from "./Others/Kurta/Kurta";
 import Frogs from "./Others/Frogs/Frogs";
+import Kameez from "./Others/Kameez/Kameez";
+import ManCollections from "./Pages/ManCollections/ManCollections";
+import WomanCollections from "./Pages/WomanCollections/WomanCollections";
+import KidCollections from "./Pages/KidCollections/KidCollections";
+import WinterCollection from "./Pages/WinterCollections/WinterCollection";
+import SummerCollections from "./Pages/SummerCollection/SummerCollections";
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
           <Route path="/tights" element={<Tights/>} />
           <Route path="/kurta" element={<Kurta/>} />
           <Route path="/frogs" element={<Frogs/>} />
+          <Route path="/kameez" element={<Kameez/>} />
           <Route path="/manCollections" element={<ManCollections />} />
           <Route path="/womanCollections" element={<WomanCollections />} />
           <Route path="/kidsCollections" element={<KidCollections />} />
