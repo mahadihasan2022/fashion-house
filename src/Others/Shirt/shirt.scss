@@ -1,13 +1,4 @@
 .Pagination-container{
-    background-color: rgba(38, 41, 44, 0.698);
-    position: sticky;
-    top: 70px;
-    margin: 0;
-    height: calc(100vh - 70px);
-    overflow: scroll;
-    &::-webkit-scrollbar {
-      display: none;
-    }
     h1{
         margin: 0;
         text-align: center;

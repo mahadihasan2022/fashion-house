@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import Item from '../../Components/Item/Item';
-import './shirt.scss';
+import './panjabi.scss';
 
-const Shirt = () => {
+const Panjabi = () => {
     const [products, setProducts] = useState([]);
 
 
     useEffect(() => {
-      fetch(`http://localhost:5000/products/variants/Shirt`)
+      fetch(`http://localhost:5000/products/variants/Panjabi`)
         .then((res) => res.json())
         .then((data) => setProducts(data));
     }, []);
     return (
         <div className="Pagination-container">
-        <h1>Shirt</h1>
+        <h1>Panjabi</h1>
         <div className="product-container">
           <div className="container">
             {products.map((product) => (
@@ -26,4 +26,4 @@ const Shirt = () => {
     );
 };
 
-export default Shirt;
+export default Panjabi;

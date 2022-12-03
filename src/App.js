@@ -15,8 +15,11 @@ import WomanCollections from "./Pages/WomanCollections/WomanCollections";
 import KidCollections from "./Pages/KidCollections/KidCollections";
 import WinterCollection from "./Pages/WinterCollections/WinterCollection";
 import SummerCollections from "./Pages/SummerCollection/SummerCollections";
-import Saree from "./Others/Saree/Saree";
 import Shirt from "./Others/Shirt/Shirt";
+import Pant from "./Others/Pant/Pant";
+import Saree from "./Others/Saree/Saree";
+import Tshirt from "./Others/Tshirt/Tshirt";
+import Panjabi from "./Others/Panjabi/Panjabi";
 
 function App() {
   return (
@@ -26,6 +29,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/saree" element={<Saree/>} />
           <Route path="/shirt" element={<Shirt/>} />
+          <Route path="/pant" element={<Pant/>} />
+          <Route path="/Tshirt" element={<Tshirt/>} />
+          <Route path="/panjabi" element={<Panjabi/>} />
           <Route path="/manCollections" element={<ManCollections />} />
           <Route path="/womanCollections" element={<WomanCollections />} />
           <Route path="/kidsCollections" element={<KidCollections />} />
