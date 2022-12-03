@@ -20,6 +20,15 @@ const RightBar = () => {
   const handleOnPanjabi = () =>{
     navigate('./panjabi');
   }
+  const handleOnTops = () =>{
+    navigate('./tops');
+  }
+  const handleOnJacket = () =>{
+    navigate('./jacket');
+  }
+  const handleOnCoats = () =>{
+    navigate('./coats');
+  }
 
 
 
@@ -46,9 +55,9 @@ const RightBar = () => {
           <button onClick={handleOnTShirt}>T-Shirt</button>
           <button onClick={handleOnPant}>Pant</button>
           <button onClick={handleOnPanjabi}>Panjabi</button>
-          <button>Tops</button>
-          <button>Jacket</button>
-          <button>Coats</button>
+          <button onClick={handleOnTops}>Tops</button>
+          <button onClick={handleOnJacket}>Jacket</button>
+          <button onClick={handleOnCoats}>Coats</button>
           <button>Half-Pant</button>
           <button>Tights</button>
           <button>Kurta</button>
