@@ -24,6 +24,7 @@ import Tops from "./Others/Tops/Tops";
 import Jacket from "./Others/Jacket/Jacket";
 import Coats from "./Others/Coats/Coats";
 import HalfPant from "./Others/HalfPant/HalfPant";
+import Tights from "./Others/Tights/Tights";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
           <Route path="/jacket" element={<Jacket/>} />
           <Route path="/coats" element={<Coats/>} />
           <Route path="/half-pant" element={<HalfPant/>} />
+          <Route path="/tights" element={<Tights/>} />
           <Route path="/manCollections" element={<ManCollections />} />
           <Route path="/womanCollections" element={<WomanCollections />} />
           <Route path="/kidsCollections" element={<KidCollections />} />
