@@ -1,0 +1,71 @@
+.Pagination-container{
+    h1{
+        margin: 0;
+        text-align: center;
+        padding-top: 5px;
+    }
+    .product-container{
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        padding-left: 12px;
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            width: 200px;
+            padding-top: 15px;
+
+        }
+    }
+}
+.addProducts{
+    padding-left: 20px;
+    padding-top: 30px;
+    button{
+        cursor: pointer;
+    background-color: aqua;
+    width: 120px;
+    height: 40px;
+    font-weight: bold;
+    font-style: italic;
+    border: none;
+    border-radius: 5px;
+    }
+}
+.pagination{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    font-size: 10px; ;
+    gap: 8px;
+    padding-top: 40px;
+    color: black;
+}
+.pagination .page-num{
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: 600;
+    background-color:  aqua;
+}
+.pagination .page-number{
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: 600;
+    background-color:  lightsalmon;
+}
+.pagination .page-num:hover{
+    background-color: rgb(33, 15, 3);
+    color: white;
+
+}
+.pagination .page-number:hover{
+    background-color: rgb(6, 246, 166);
+    color: #050505;
+}
+.pagination .action{
+    background-color: limegreen;
+}

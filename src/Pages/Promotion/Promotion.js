@@ -1,11 +1,10 @@
 import React from 'react';
-import LeftBar from '../../Header/LeftBar/LeftBar';
-import Navbar from '../../Header/NavBar/Navbar';
+import Dproducts from '../../Components/Dproducts/Dproducts';
 
 const Promotion = () => {
     return (
         <div>
-            <h1>discount</h1>
+            <Dproducts/>
         </div>
     );
 };

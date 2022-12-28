@@ -1,23 +1,12 @@
-import {
-    createUserWithEmailAndPassword,
-  getAuth,
-  GoogleAuthProvider,
-  onAuthStateChanged,
-  signInWithEmailAndPassword,
-  signInWithPopup,
-  signOut,
-  updateProfile,
-} from "@firebase/auth";
+import {createUserWithEmailAndPassword, getAuth, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile,} from "@firebase/auth";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { firebaseInitialize } from "../firebase/firebase.init";
-
 firebaseInitialize();
 const useFirebase = () => {
   const auth = getAuth();
   const [user, setUser] = useState({});
   const [getUser, setGetUser] = useState({});
-
   useEffect(() => {
     if (getUser?.email) {
       const isNewUser = axios.put(`http://localhost:5000/user?addUser=${getUser?.email}`, getUser)
@@ -35,7 +24,6 @@ const useFirebase = () => {
     });
     return () => unsubscribe;
   }, [auth]);
-
   const createUserWithEmailAndPasswordHandler = (name, email, password) => {
     createUserWithEmailAndPassword(auth, email, password)
       .then((result) => {
@@ -53,7 +41,6 @@ const useFirebase = () => {
         alert("sign in unsuccessful. Please try again");
       });
   };
-
   const googleSignInHandler = () => {
     const provider = new GoogleAuthProvider();
     signInWithPopup(auth, provider)
@@ -79,7 +66,6 @@ const useFirebase = () => {
       })
       .catch((error) => {});
   };
-
   return {
     user,
     createUserWithEmailAndPasswordHandler,
@@ -88,5 +74,4 @@ const useFirebase = () => {
     logoutHandler,
   };
 };
-
 export default useFirebase;
