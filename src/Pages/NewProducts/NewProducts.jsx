@@ -1,12 +1,11 @@
 import React from 'react';
+import AddNew from '../../Components/AddNew/AddNew';
 import Navbar from '../../Header/NavBar/Navbar';
 
 const NewProducts = () => {
     return (
        <div>
-         <div>
-            <h1>Our Website New</h1>
-        </div>
+        <AddNew/>
        </div>
     );
 };

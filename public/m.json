@@ -1,5 +1,31 @@
 [
    {
+"name":"Wedding Saree",
+"brand":"Yellow",
+"price":6800,
+"stock":12,
+"size":"Int",
+"variants":"Saree",
+"category":"Woman",
+"subCategory":"Regular",
+"color":"Red",
+"img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnbZAmZ7oI51iMyfafjgibu-crnKzoKE2sxw&usqp=CAU",
+"quantity":0
+   },
+   {
+"name":"Panjabi",
+"brand":"Arong",
+"price":2500,
+"stock":6,
+"size":"L",
+"variants":"Saree",
+"category":"Man",
+"subCategory":"Regular",
+"color":"White",
+"img":"https://www.aarong.com/media/catalog/product/0/0/0030000124907_4.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=400&width=300&canvas=300:400",
+"quantity":0
+   },
+   {
 "name":"Black Color Silk Saree",
 "brand":"Yellow",
 "price":4500,
@@ -10,8 +36,7 @@
 "subCategory":"Regular",
 "color":"Black",
 "img":"https://static-01.daraz.com.bd/p/7343a9d655f54ffc238ad8706012e837.jpg",
-"quantity":0,
-"discount":"20%"
+"quantity":0
    },
    {
 "name":"Eid Collections",
@@ -24,8 +49,7 @@
 "subCategory":"Regular",
 "color":"Blue",
 "img":"https://majestic.com.bd/media/images/MJ212012.original.png",
-"quantity":0,
-"discount":"25%"
+"quantity":0
    },
    {
 "name":"Coats Collections",
@@ -38,8 +62,7 @@
 "subCategory":"Winter",
 "color":"Black",
 "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxJW9ySLEAWcLP8y7LrNKaW9mFDtjDVQ_LAA&usqp=CAU",
-"quantity":0,
-"discount":"18%"
+"quantity":0
    },
    {
 "name":"Coats Collections",
@@ -52,8 +75,7 @@
 "subCategory":"Winter",
 "color":"White",
 "img":"https://cf.shopee.ph/file/b12509df5340bbd6bcfffa2ad48f3110",
-"quantity":0,
-"discount":"15%"
+"quantity":0
    },
    {
 "name":"New Tops Design",
@@ -66,8 +88,7 @@
 "subCategory":"Summer",
 "color":"Red",
 "img":"https://wearhutbd.com/wp-content/uploads/2021/09/tops-for-girls-tops-for-womens-latest-tops-design-new-tops-design-online-shopping-for-tops-USA-BD-UK-Canada-India-Tops-design-for-womens.jpg",
-"quantity":0,
-"discount":"12%"
+"quantity":0
    },
    {
 "name":"New Frogs Design",
@@ -80,8 +101,7 @@
 "subCategory":"Regular",
 "color":"Blue",
 "img":"https://i.pinimg.com/736x/7c/e7/c4/7ce7c4101bf67de9bb67f89209b7ac81.jpg",
-"quantity":0,
-"discount":"16%"
+"quantity":0
    },
    {
 "name":"Selwar Kameez",
@@ -94,8 +114,7 @@
 "subCategory":"Regular",
 "color":"Multi",
 "img":"http://cdn.shopify.com/s/files/1/0182/1471/5470/collections/3308_1200x1200.jpg?v=1652521791",
-"quantity":0,
-"discount":"22%"
+"quantity":0
    },
    {
 "name":"Hot Pant",
@@ -108,8 +127,7 @@
 "subCategory":"Summer",
 "color":"Green",
 "img":"https://i.pinimg.com/474x/45/ce/a5/45cea5510aab02201753348130970b1f.jpg",
-"quantity":0,
-"discount":"25%"
+"quantity":0
    },
    {
 "name":"Casual Shirt",
@@ -122,8 +140,7 @@
 "subCategory":"Regular",
 "color":"Black",
 "img":"https://static.fibre2fashion.com/MemberResources/LeadResources/1/2018/4/Seller/18144566/Images/18144566_0_casual-shirt-for-men.jpg",
-"quantity":0,
-"discount":"20%"
+"quantity":0
    },
    {
 "name":"Casual Shirt",
@@ -136,8 +153,7 @@
 "subCategory":"Regular",
 "color":"Black",
 "img":"https://static.fibre2fashion.com/MemberResources/LeadResources/1/2018/4/Seller/18144566/Images/18144566_0_casual-shirt-for-men.jpg",
-"quantity":0,
-"discount":"18%"
+"quantity":0
    },
    {
 "name":"Men's T-shirt",
@@ -150,7 +166,6 @@
 "subCategory":"Regular",
 "color":"Black",
 "img":"https://cf.shopee.ph/file/4b27ad55416d5e8e2f6b30e0a6e7e098",
-"quantity":0,
-"discount":"12%"
+"quantity":0
    }
 ]

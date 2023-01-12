@@ -1,4 +1,5 @@
 import React from 'react';
+import AboutUs from '../../Components/AboutUs/AboutUs';
 import Navbar from '../../Header/NavBar/Navbar';
 
 const Blogs = () => {
@@ -6,7 +7,7 @@ const Blogs = () => {
         <div>
             <Navbar/>
             <div>
-                <h1>Blogs</h1>
+                <AboutUs/>
             </div>
             
         </div>
