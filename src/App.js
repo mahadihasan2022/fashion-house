@@ -9,7 +9,6 @@ import Profile from "./user/Profile/Profile";
 import Layout from "./Layout/Layout";
 import NewProducts from "./Pages/NewProducts/NewProducts";
 import Blogs from "./Pages/Blogs/Blogs";
-import Contact from "./Pages/Contact/Contact";
 import Shirt from "./Others/Shirt/Shirt";
 import Pant from "./Others/Pant/Pant";
 import Saree from "./Others/Saree/Saree";
@@ -28,6 +27,7 @@ import WomanCollections from "./Pages/WomanCollections/WomanCollections";
 import KidCollections from "./Pages/KidCollections/KidCollections";
 import WinterCollection from "./Pages/WinterCollections/WinterCollection";
 import SummerCollections from "./Pages/SummerCollection/SummerCollections";
+import DashBoard from "./Pages/DashBoard/DashBoard";
 
 function App() {
   return (
@@ -64,7 +64,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
         </Route>
         <Route path="/blogs" element={<Blogs />} />
-        <Route path="/contactUs" element={<Contact />} />
+        <Route path="/dashboard" element={<DashBoard />} />
         <Route element={<LoginPrivateRoute />}>
           <Route path="/login" element={<Login />} />
           <Route path="/signUp" element={<SignUp />} />

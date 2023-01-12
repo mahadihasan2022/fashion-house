@@ -94,16 +94,16 @@ const Navbar = (props) => {
                 New Product
               </Link>
               <Link
+                to="/dashboard"
+                style={{ textDecoration: "none", color: "black" }}
+              >
+              Dashboard
+              </Link>
+              <Link
                 to="/blogs"
                 style={{ textDecoration: "none", color: "black" }}
               >
                 Blogs
-              </Link>
-              <Link
-                to="/contactUs"
-                style={{ textDecoration: "none", color: "black" }}
-              >
-                Contact Us
               </Link>
             </ul>
           </div>

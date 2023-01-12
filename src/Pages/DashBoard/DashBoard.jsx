@@ -1,15 +1,13 @@
 import React from 'react';
 import Navbar from '../../Header/NavBar/Navbar';
 
-const Contact = () => {
+const DashBoard = () => {
     return (
         <div>
             <Navbar/>
-            <div>
-                <h1>Contact Us</h1>
-            </div>
+            <h1>DashBoard</h1>
         </div>
     );
 };
 
-export default Contact;
+export default DashBoard;

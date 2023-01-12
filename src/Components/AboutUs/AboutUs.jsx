@@ -49,55 +49,55 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        <div className="container grid grid-cols-3 gap-8">
-          <div className="flex bg-white rounded-sm">
-            <div className="pl-10">
-              <img className="pt-10 pr-2 w-16" src={usersSolid} alt="" />
+        <div className="container">
+          <div className="card-container">
+            <div className="card">
+              <img src={usersSolid} alt="" />
             </div>
-            <div className="pt-8 pl-2">
-              <h1 className="text-2xl font-bold italic text-start text-black">
+            <div className="card-details">
+              <h1>
                 Fantastic support
               </h1>
-              <p className="text-sm font-bold italic text-start text-emerald-600">
+              <p>
                 Diam platea nisi proin taciti laoreet consequat curabitur
               </p>
-              <div className="pt-2 pb-2">
-                <button onClick={handleOnclick} className="w-28 h-8 bg-pink-500 rounded-sm font-bold italic">
+              <div className="btn-info">
+                <button onClick={handleOnclick}>
                   Visit Now
                 </button>
               </div>
             </div>
           </div>
-          <div className="flex bg-white rounded-sm">
-            <div className="pl-10">
-              <img className="pt-10 pr-2 w-16" src={slack} alt="" />
+          <div className="card-container">
+            <div className="card">
+              <img src={slack} alt="" />
             </div>
-            <div className="pt-8 pl-2">
-              <h1 className="text-2xl font-bold italic text-start text-black">
+            <div className="card-details">
+              <h1>
                 Prestigious
               </h1>
-              <p className="text-sm font-bold italic text-start text-emerald-600">
+              <p>
                 Diam platea nisi proin taciti laoreet consequat curabitur
               </p>
-              <div className="pt-2 pb-2">
+              <div className="btn-info">
                 <button onClick={HandleClickPrestigious} className="w-28 h-8 bg-pink-500 rounded-sm font-bold italic">
                   Visit Now
                 </button>
               </div>
             </div>
           </div>
-          <div className="flex bg-white rounded-sm">
-            <div className="pl-10">
-              <img className="pt-10 pr-2 w-16" src={nfc} alt="" />
+          <div className="card-container">
+            <div className="card">
+              <img src={nfc} alt="" />
             </div>
-            <div className="pt-8 pl-2">
-              <h1 className="text-2xl font-bold italic text-start text-black">
+            <div className="card-details">
+              <h1>
                 Community
               </h1>
-              <p className="text-sm font-bold italic text-start text-emerald-600">
+              <p>
                 Diam platea nisi proin taciti laoreet consequat curabitur
               </p>
-              <div className="pt-2 pb-2">
+              <div className="btn-info">
                 <button onClick={handleOnclickCummunity} className="w-28 h-8 bg-pink-500 rounded-sm font-bold italic">
                   Visit Now
                 </button>

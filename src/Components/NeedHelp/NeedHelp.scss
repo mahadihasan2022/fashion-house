@@ -1,68 +1,23 @@
-.about{
-    background-color: #0f172a;
-    .about-container{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    padding-top: 30px;
-    padding-bottom: 30px;
-
-        .text-container{
-            padding-top: 30px;
-            padding-bottom: 30px;
-    margin: 10px;
-
-            h1{
-                color: white;
-                padding-top: 30px;
-                font-size: 30px;
-                font-weight: bold;
-                font-style: italic;
-                text-align: center;
-                margin: 0;
-            }
-            h2{
-                color: #fde047;
-                margin: 0;
-                font-size: 25px;
-                font-weight: bold;
-                font-style: italic;
-                text-align: center;
-            }
-            h3{
-                color: #fb923c;
-                margin: 0;
-                font-size: 25px;
-                font-weight: bold;
-                font-style: italic;
-                text-align: center;
-                padding-bottom: 30px;
-            }
+.needHelp{
+    background-color: #064e3b;
+    .help-container{
+        padding-top: 65px;
+        h1{
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+            font-size: 60px;
+            margin: 0;
         }
-        .details-container{
-            padding-top: 50px;
-            padding-bottom: 30px;
-            p{
-                text-align: start;
-                font-size: small;
-                font-weight: bold;
-                font-style: italic;
-                color: white;
-            }
-            .btn-info{
-                padding-top: 10px;
-                button{
-                    width: 130px;
-                    height: 35px;
-                    font-style: italic;
-                    font-weight: bold;
-                    font-size: medium;
-                    cursor: pointer;
-                    color: black;
-                    background-color: #22c55e;
-                    border-radius: 2px;
-                    border: none;
-                }
-            }
+        p{
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+            font-size: 20px;
+            color: #f97316;
+            margin: 0;
+            padding-bottom: 40px;
+
         }
     }
     .container{
