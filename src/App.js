@@ -29,6 +29,7 @@ import WinterCollection from "./Pages/WinterCollections/WinterCollection";
 import SummerCollections from "./Pages/SummerCollection/SummerCollections";
 import DashBoard from "./Pages/DashBoard/DashBoard";
 import QuestionBox from "./Share/QuestionBox/QuestionBox";
+import Prestigious from "./Share/Prestigious/Prestigious";
 
 function App() {
   return (
@@ -55,7 +56,8 @@ function App() {
           <Route path="/winterCollections" element={<WinterCollection />} />
           <Route path="/summerCollections" element={<SummerCollections />} />
         </Route>
-        <Route path="/questionBox" element={<QuestionBox />} />
+        <Route path="/questionBox" element={<QuestionBox/>} />
+        <Route path="/prestigious" element={<Prestigious/>} />
         <Route element={<UserPrivateRoute />}>
           <Route path="/" element={<Layout />}>
             <Route path="/promotion" element={<Promotion />} />
