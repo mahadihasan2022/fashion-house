@@ -30,6 +30,7 @@ import SummerCollections from "./Pages/SummerCollection/SummerCollections";
 import DashBoard from "./Pages/DashBoard/DashBoard";
 import QuestionBox from "./Share/QuestionBox/QuestionBox";
 import Prestigious from "./Share/Prestigious/Prestigious";
+import Community from "./Share/Community/Community";
 
 function App() {
   return (
@@ -58,6 +59,7 @@ function App() {
         </Route>
         <Route path="/questionBox" element={<QuestionBox/>} />
         <Route path="/prestigious" element={<Prestigious/>} />
+        <Route path="/community" element={<Community/>} />
         <Route element={<UserPrivateRoute />}>
           <Route path="/" element={<Layout />}>
             <Route path="/promotion" element={<Promotion />} />
