@@ -1,0 +1,33 @@
+.bookingModal{
+    form {
+        .form-group{
+            label{
+                font-size: 20px;
+                font-weight: bold;
+                font-style: italic;
+            }
+            input{
+                width: 90%;
+                height: 30px;
+                padding-left: 10px;
+
+
+            }
+        }
+        .btn-btn{
+            padding-top: 30px;
+            padding-bottom: 30px;
+            button{
+                width: 120px;
+                height: 40px;
+                font-weight: bold;
+                font-style: italic;
+                font-size: 20px;
+                color: rgb(16, 233, 222);
+                background-color: black;
+                cursor: pointer;
+                border-radius: 4px;
+            }
+        }
+    }
+}
