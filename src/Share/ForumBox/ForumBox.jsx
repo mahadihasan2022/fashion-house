@@ -18,8 +18,8 @@ const ForumBox = () => {
         formState: { errors },
       } = useForm();
     const fromSubmitHandler = () =>{
-        alert('Appointment Success');
-        fetch(`http://localhost:5000/applyEmployee/${email}`, {
+        alert('Success!! Send Your Forum.');
+        fetch(`http://localhost:5000/forum/${email}`, {
             method: "PUT",
             body: JSON.stringify({ firstName, lastName, email, phoneNumber, question }),
             headers: {
@@ -33,29 +33,29 @@ const ForumBox = () => {
     return (
       <div>
         <Navbar/>
-       <div>
+       <div className='forumBox'>
         <h1>Forum Box</h1>
        <div className='bookingModal'>
              <form onSubmit={fromSubmitHandler}>
   <div class="form-group">
     <label for="exampleInputEmail1">First Name</label><br />
-    <input onChange={e=> setFirstName(e.target.value)} type="text" placeholder='first name'required />
+    <input onChange={e=> setFirstName(e.target.value)} type="text" placeholder='First Name'required />
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Last Name</label><br />
-    <input onChange={e=> setLastName(e.target.value)} type="text" placeholder='last name'required />
+    <input onChange={e=> setLastName(e.target.value)} type="text" placeholder='Last Name'required />
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Email</label><br />
-    <input onChange={e=> setEmail(e.target.value)} type="text" placeholder='email' required/>
+    <input onChange={e=> setEmail(e.target.value)} type="text" placeholder='@Email' required/>
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Phone Number</label><br />
-    <input onChange={e=> setPhoneNumber(e.target.value)} type="text" placeholder='phone number'required />
+    <input onChange={e=> setPhoneNumber(e.target.value)} type="text" placeholder='+880 Phone Number'required />
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1">Ask For You</label><br />
-    <input onChange={e=> setQuestion(e.target.value)} type="text" placeholder='address'required/>
+    <label for="exampleInputPassword1">Asked For You</label><br />
+    <input onChange={e=> setQuestion(e.target.value)} type="text" placeholder='Question Box'required/>
   </div>
  <div className='btn-btn'>
  <button type="submit" class="btn btn-primary">Submit</button>

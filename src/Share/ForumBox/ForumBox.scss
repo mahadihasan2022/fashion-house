@@ -1,0 +1,56 @@
+.forumBox {
+    background-color: #1f2937;
+    // background-color: #57534e;
+    h1 {
+        text-align: center;
+        font-size: 45px;
+        font-weight: bold;
+        font-style: italic;
+        margin: 0;
+        padding: 20px 0px;
+        color: white;
+    }
+    .bookingModal {
+        form {
+            background-color: aqua;
+            border-radius: 4px;
+            padding-top: 30px;
+            margin: 0px 120px;
+            padding-left: 80px;
+            border: 1px solid green;
+            .form-group {
+                padding-bottom: 15px;
+                label {
+                    text-align: start;
+                    font-size: 20px;
+                    font-weight: bold;
+                    font-style: italic;
+                    padding-bottom: 20px;
+                }
+                input {
+                    width: 90%;
+                    height: 35px;
+                    padding-left: 10px;
+                    border: 1px solid green;
+                    border-radius: 4px;
+                }
+            }
+            .btn-btn {
+                padding-top: 20px;
+                padding-bottom: 30px;
+                button {
+                    width: 120px;
+                    height: 40px;
+                    font-weight: bold;
+                    font-style: italic;
+                    font-size: 20px;
+                    color: #fb923c;
+                    background-color: black;
+                    cursor: pointer;
+                    border-radius: 4px;
+                    border: 2px solid #fb923c;
+                }
+            }
+        }
+    }
+}
