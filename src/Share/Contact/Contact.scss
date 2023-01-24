@@ -64,13 +64,30 @@
                         font-size: 20px;
                         font-weight: bold;
                         font-style: italic;
+                        color: #1f2937;
+                        span{
+                            padding-left: 6px;
+                            font-size: 16px;
+                            font-weight: bold;
+                            font-style: italic;
+                            color: #065f46;
+
+                        }
                     }
                     h5{
                         margin: 0;
                         font-size: 15px;
                         font-weight: bold;
                         font-style: italic;
+                        color: #57534e;
                         padding-bottom: 80px;
+                        span{
+                            padding-left: 6px;
+                            font-size: 14px;
+                            font-weight: bold;
+                            font-style: italic;
+                            color: #57534e;  
+                        }
                     }
                     h6{
                         margin: 0;

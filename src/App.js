@@ -32,6 +32,8 @@ import QuestionBox from "./Share/QuestionBox/QuestionBox";
 import Prestigious from "./Share/Prestigious/Prestigious";
 import Community from "./Share/Community/Community";
 import Contact from "./Share/Contact/Contact";
+import About from "./Share/About/About";
+import ForumBox from "./Share/ForumBox/ForumBox";
 
 function App() {
   return (
@@ -62,6 +64,8 @@ function App() {
         <Route path="/prestigious" element={<Prestigious/>} />
         <Route path="/community" element={<Community/>} />
         <Route path="/contact" element={<Contact/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/forum" element={<ForumBox/>} />
         <Route element={<UserPrivateRoute />}>
           <Route path="/" element={<Layout />}>
             <Route path="/promotion" element={<Promotion />} />

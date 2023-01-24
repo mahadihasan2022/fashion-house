@@ -48,8 +48,9 @@ const Contact = () => {
             </div>
             <div className="details">
               <h3>Call us directly at</h3>
-              <h4>01409117333</h4>
-              <h5>Gmail: mahadi35-2848@diu.edu.bd</h5>
+              <h4>Contact Number:<span>01409117333</span></h4>
+              <h4>Gmail:<span>mahadi35-2848@diu.edu.bd</span></h4>
+              <h5>Address:<span>10/A Dhanmondi,Dhaka-1207</span></h5>
             </div>
 
 

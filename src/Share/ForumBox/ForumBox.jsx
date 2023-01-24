@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import './BookingModal.scss';
+import Navbar from '../../Header/NavBar/Navbar';
+import './ForumBox.scss';
 
-
-const BookingModal = ( ) => {
-
+const ForumBox = () => {
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [email, setEmail] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
-    const [address, setAddress] = useState("");
+    const [question, setQuestion] = useState("");
    
     const {
         register,
@@ -21,7 +21,7 @@ const BookingModal = ( ) => {
         alert('Appointment Success');
         fetch(`http://localhost:5000/applyEmployee/${email}`, {
             method: "PUT",
-            body: JSON.stringify({ firstName, lastName, email, phoneNumber, address }),
+            body: JSON.stringify({ firstName, lastName, email, phoneNumber, question }),
             headers: {
               "Content-Type": "application/json",
             },
@@ -32,7 +32,10 @@ const BookingModal = ( ) => {
 
     return (
       <div>
-        <div className='bookingModal'>
+        <Navbar/>
+       <div>
+        <h1>Forum Box</h1>
+       <div className='bookingModal'>
              <form onSubmit={fromSubmitHandler}>
   <div class="form-group">
     <label for="exampleInputEmail1">First Name</label><br />
@@ -51,16 +54,17 @@ const BookingModal = ( ) => {
     <input onChange={e=> setPhoneNumber(e.target.value)} type="text" placeholder='phone number'required />
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1">Address</label><br />
-    <input onChange={e=> setAddress(e.target.value)} type="text" placeholder='address'required/>
+    <label for="exampleInputPassword1">Ask For You</label><br />
+    <input onChange={e=> setQuestion(e.target.value)} type="text" placeholder='address'required/>
   </div>
  <div className='btn-btn'>
  <button type="submit" class="btn btn-primary">Submit</button>
  </div>
 </form>
         </div>
+       </div>
       </div>
     );
 };
 
-export default BookingModal;
+export default ForumBox;
