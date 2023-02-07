@@ -2,10 +2,13 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import ReactPaginate from 'react-paginate';
+import { useNavigate } from 'react-router-dom';
 import SingleItem from '../SingleItem/SingleItem';
 import './Dproducts.scss';
 
 const Dproducts = () => {
+
+  const navigate = useNavigate();
 
     const [products, setProducts] = useState([]);
     const [currentItems, setCurrentItems] = useState([]);
@@ -30,6 +33,10 @@ const Dproducts = () => {
     };
 
 
+    const handleAddPromotion = () =>{
+      navigate('/addPromotion');
+
+    }
 
 
 
@@ -46,7 +53,7 @@ const Dproducts = () => {
           </div>
         </div>
         <div className='addProducts'>
-            <button>Add Products</button>
+            <button onClick={handleAddPromotion}>Add Products</button>
         </div>
       
       <ReactPaginate

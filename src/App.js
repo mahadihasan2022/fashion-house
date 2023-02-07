@@ -34,6 +34,7 @@ import Community from "./Share/Community/Community";
 import Contact from "./Share/Contact/Contact";
 import About from "./Share/About/About";
 import ForumBox from "./Share/ForumBox/ForumBox";
+import AddPromotion from "./Products/AddPromotion/AddPromotion";
 
 function App() {
   return (
@@ -66,6 +67,7 @@ function App() {
         <Route path="/contact" element={<Contact/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/forum" element={<ForumBox/>} />
+        <Route path="/addPromotion" element={<AddPromotion/>} />
         <Route element={<UserPrivateRoute />}>
           <Route path="/" element={<Layout />}>
             <Route path="/promotion" element={<Promotion />} />
