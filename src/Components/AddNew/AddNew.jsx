@@ -2,15 +2,22 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import ReactPaginate from 'react-paginate';
+import { useNavigate } from 'react-router-dom';
 import Item from '../Item/Item';
 
 const AddNew = () => {
 
+    const navigate = useNavigate();
     const [products, setProducts] = useState([]);
     const [currentItems, setCurrentItems] = useState([]);
     const [pageCount, setPageCount] = useState(0);
     const [itemOffset, setItemOffset] = useState(0);
     const itemsPerPage = 9;
+
+    const handleNewProducts = () =>{
+
+      navigate('/addNew');
+    }
   
     useEffect(() => {
       fetch(`http://localhost:5000/newProducts`)
@@ -40,7 +47,7 @@ const AddNew = () => {
           </div>
         </div>
         <div className='addProducts'>
-            <button>Add Products</button>
+            <button onClick={handleNewProducts}>Add Products</button>
         </div>
       
       <ReactPaginate
